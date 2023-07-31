@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MainBbsConfig(AppConfig):
+class CapybaraChatConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'main_BBS'
+    name = 'capybara_chat'
