@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
     <title>Capybara</title>
 </head>
 <body>
     <!-- <h1>Let's talk about capybara!</h1> -->
     <form id="form" method="POST" style="position: fixed; bottom: 50px; left: 170px;">
         <input maxlength="30" class="input" placeholder="type your message" type="text" name="message" size="100">
-            <button type="submit" class="button"><div class="triangle"></div></button> <!-- ボタンを押すと、メッセージが表示される-->
+        <button type="submit" class="button"><div class="triangle"></div></button> <!-- ボタンを押すと、メッセージが表示される-->
     </form>
     <!-- <p class="neumorphism"></p> -->
     <div id="messages"></div>
