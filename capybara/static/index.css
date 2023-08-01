@@ -1,0 +1,118 @@
+.input-height {
+    padding: 10px;
+    line-height: 1;
+    font-size: 15px;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+                -20px -20px 60px #ffffff;
+    transition: 0.3s;
+    border-radius: 10px;
+    line-height: 1;
+    font-size: 15px;
+    position: relative;
+}
+
+.input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+                inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+.parent {
+    position: relative;
+}
+
+.neumorphism {
+    width: 25%;
+    height: 50% auto;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: inset 16px 16px 32px #bababa,
+                inset -16px -16px 32px #ffffff;
+    margin: 60px;
+    word-wrap: break-word;
+    aspect-ratio: 1/1;
+}
+
+.center {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#Box {
+    padding-top: 40%;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    outline: none;
+    aspect-ratio: 1/1;
+    width: 80px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #b1b1b1,
+                -20px -20px 60px #ffffff;
+    position: relative; right: 70px; bottom: 60px;
+}
+
+.text {
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+/* .triangle{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid black;
+} */
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 30px solid #555555;
+    border-top: 0;
+    position: absolute;
+    right: 20px; bottom: 25px;
+}
+
+.name {
+    width: 60%;
+    height: 20%;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #bababa,
+                -13px -13px 26px #ffffff;
+    margin: 20%;
+}
+
+
+.name p{
+    font-family: sans-serif;
+    font-size: 150%;
+    text-align: center;
+    padding: 8%;
+}
+
+.icon {
+    border-radius: 50%;
+    position: absolute; right: 92%;
+    width: 5%;
+    height: 10%;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #bababa,
+                -13px -13px 26px #ffffff;
+}

@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <title>Capybara</title>
+</head>
+<body>
+    <!-- <h1>Let's talk about capybara!</h1> -->
+    <form id="form" method="POST" style="position: fixed; bottom: 50px; left: 170px;">
+        <input maxlength="30" class="input" placeholder="type your message" type="text" name="message" size="100">
+        <button type="submit" class="button"><div class="triangle"></div></button> <!-- ボタンを押すと、メッセージが表示される-->
+    </form>
+    <!-- <p class="neumorphism"></p> -->
+    <div id="messages"></div>
+    <script> type="text/javascript"
+        let url = `ws://${window.location.host}/ws/socket-server/`
+
+        const chatSocket = new WebSocket(url)
+
+        chatSocket.onmessage = function(e) {
+            let data = JSON.parse(e.data)
+            console.log('Data:', data)
+
+            if(data.type === 'chat') {
+                let messages = document.getElementById('messages')
+                messages.insertAdjacentHTML('beforeend', `<div class="neumorphism"><div class="icon"></div>
+                                            <p id="Box" class="text">${data.message}</p>
+                                            <div class="name"><p>atom</p></div>
+                                        </div>`)
+            }
+        }
+        let form = document.getElementById('form')
+        let btn = document.getElementById('btn')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            let message = e.target.message.value
+            chatSocket.send(JSON.stringify({
+                'message':message
+            }))
+            form.reset() // メッセージを送ったら、htmlのformの内容をリセットする
+        })
+    </script>
+</body>
+</html>
