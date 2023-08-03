@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>他のユーザーの情報</title>
+</head>
+<body>
+    <h1>他のユーザーの情報</h1>
+    {% for user in users %}
+    <h2>{{user.username}}</h2>
+    <p>連絡先：{{user.email}}</p>
+    {% endfor %}
+</body>
+
+</html>
