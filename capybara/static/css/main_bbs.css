@@ -1,40 +1,70 @@
-.MainPageHeader{
-    height: auto;
-    background-color: #f4f4f4;
+.bodyback{
+    position: fixed;
+    background: #fafafa;
+    box-shadow: inset 6px 6px 12px #9d9d9d,
+                inset -6px -6px 12px #ffffff;
+    height: 100%;
+    width: 100%;
 }
-.HeaderDiv{
-    padding: 8px;
-    gap: var(--base-size-12,12px);
-    display: flex;
-}
-.HeaderDiv-start{
-    display: flex;
-    flex: 1 1 auto;
-    align-items: center;
-}
-.HeaderDiv-end{
-    justify-content: flex-end;
-    display:flex;
-    flex: 0 1 auto;
-    align-items: center;
-}
-.icon-circle{
-    height: 80px;
-    border-radius: 50%;
-    align-items: flex-end;
+.menumargin{
+    height: 7%;
     aspect-ratio: 1/1;
-    box-shadow:  20px 20px 60px #c4c4c4,
-            -20px -20px 60px #ffffff;
 }
-.headerico{
-    width: 100%;
-    height: 100%;
-    justify-content:flex-end;
-    align-items: baseline;
-    padding: 1px;
+.menubutton{
+    border-radius: 20%;
+    margin: 40%;
+    height: 90%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  4px 4px 6px #a4a4a4,
+                -4px -4px 6px #ffffff;
+    aspect-ratio: 1/1;
+    border-color: lightgray;
+    border:0;
 }
-.userico{
-    width: 100%;
+.menutriangle{
+    display: inline-block;
+    margin: 20%;
+    margin-left: 22%;
+    width: 60%;
+    height: 60%;
+    clip-path: polygon(0% 0%, 0% 100%, 95% 50%);
+    background: #b0b0b0;
+    box-shadow: inset 4px 4px 8px #737373,
+                inset -4px -4px 8px #9b9b9b;
+}
+.sidemenu{
+    width: 20%;
     height: 100%;
-    padding: 1px;
+    background: linear-gradient(145deg, #d5d5d5, #b3b3b3);
+    position: absolute;
+    border-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow-y: hidden;
+}
+.sidemenuheader{
+    width: 100%;
+    aspect-ratio: 20/5;
+    background: linear-gradient(145deg, #aeaeae, #939393);
+    border-radius: 10px;
+    border-top-right-radius: 40px;
+    box-shadow:  2px 2px 4px #787878,
+            -2px -2px 4px #bbbbbb;
+}
+.sidemenutitle{
+    padding: 2%;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3vw;
+}
+.sidebarclosebutton{
+    height: 60%;
+    aspect-ratio: 1/1;
+    clip-path: polygon(5% 50%, 100% 100%, 100% 0%);
+    background: #b0b0b0;
+    box-shadow: inset 4px 4px 8px #737373,
+                inset -4px -4px 8px #9b9b9b;
+    border: 0px;
 }
