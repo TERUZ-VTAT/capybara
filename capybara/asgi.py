@@ -16,6 +16,7 @@ import capybara_chat.routing
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'capybara.settings')
 
+application = get_asgi_application()
 application = ProtocolTypeRouter({
     'http':get_asgi_application(),
     'websocket':AuthMiddlewareStack(
