@@ -1,40 +1,98 @@
-.MainPageHeader{
-    height: auto;
-    background-color: #f4f4f4;
+.maintext {
+    text-align:center;
+    color: #c0c0c0;
+    position: relative;
+    top: 84px;
+    font-size: 17px;
+    font-family: monospace;
 }
-.HeaderDiv{
-    padding: 8px;
-    gap: var(--base-size-12,12px);
+
+.container{
+    margin: 0 auto;
+    position: relative;
+		top: 73px;
+    background-color: #ededed;
+    width: 570px;
+    height: 410px;
+    box-shadow: 20px 20px 20px gray;
     display: flex;
-}
-.HeaderDiv-start{
-    display: flex;
-    flex: 1 1 auto;
+    justify-content: center;
     align-items: center;
+    border-radius: 34px;
+    box-shadow:  35px 35px 70px #c9c9c9;
 }
-.HeaderDiv-end{
-    justify-content: flex-end;
-    display:flex;
-    flex: 0 1 auto;
-    align-items: center;
+
+input {
+    width: 400px;
+    height: 45px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 30px;
+    background: #ededed;
+    box-shadow: inset 10px 10px 16px #b4b4b4,
+                inset -10px -10px 16px #ffffff;
+    font-family: monospace;
+    font-size: 15px;
 }
-.icon-circle{
-    height: 80px;
-    border-radius: 50%;
-    align-items: flex-end;
-    aspect-ratio: 1/1;
-    box-shadow:  20px 20px 60px #c4c4c4,
-            -20px -20px 60px #ffffff;
+
+.usernametext {
+    position: absolute;
+        top: 10%;
+        left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
 }
-.headerico{
-    width: 100%;
-    height: 100%;
-    justify-content:flex-end;
-    align-items: baseline;
-    padding: 1px;
+.usernameentry {
+    position: absolute;
+        top: 15%;
+        left: 13%;
 }
-.userico{
-    width: 100%;
-    height: 100%;
-    padding: 1px;
+
+.emailtext {
+    position: absolute;
+        top: 30%;
+        left: 17%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+.emailentry {
+    position: absolute;
+        top: 35%;
+        left: 13%;
+}
+
+.passwordtext {
+    position: absolute;
+        top: 50%;
+        left: 19%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+.passwordentry {
+    position: absolute;
+        top: 55%;
+        left: 13%;
+}
+
+.passwordforconfirmationtext {
+    position: absolute;
+        top: 70%;
+        left: 28%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+.passwordforconfirmationentry {
+    position: absolute;
+        top: 75%;
+        left: 13%;
 }
