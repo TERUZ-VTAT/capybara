@@ -16,8 +16,8 @@ $(function(){
 		this.on_animation = false;
 		this.is_open = false;
 		this.page_content = [];
-		
-		
+
+
 		this.options = {
 			width: 400,
 			height: 500,
@@ -26,19 +26,19 @@ $(function(){
 			speed_page_turn: 700, /*ms*/
 			init_degree: -35
 		};
-		
+
 		$.extend(this.options, options);
-		
+
 		this.$element = $(element);
 	};
-	
+
 	DrBook.prototype = {
-		
-		
+
+
 		_init: function(){
-			
+
 			var that = this;
-			
+
 			this._prepare(function(){
 				that.ready = true;
 			});

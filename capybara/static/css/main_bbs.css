@@ -22,7 +22,7 @@
     box-shadow:  35px 35px 70px #c9c9c9;
 }
 
-input {
+.entry {
     width: 400px;
     height: 45px;
     border-top: none;
@@ -35,26 +35,27 @@ input {
                 inset -10px -10px 16px #ffffff;
     font-family: monospace;
     font-size: 15px;
+    padding-left: .8rem;
 }
 
-.usernametext {
+.usernametextsignup {
     position: absolute;
-        top: 10%;
+        top: 5%;
         left: 20%;
     transform: translate(-50%, -50%);
     font-family: monospace;
     font-weight: bold;
     font-size: 13px;
 }
-.usernameentry {
+.usernameentrysignup {
     position: absolute;
-        top: 15%;
+        top: 10%;
         left: 13%;
 }
 
 .emailtext {
     position: absolute;
-        top: 30%;
+        top: 25%;
         left: 17%;
     transform: translate(-50%, -50%);
     font-family: monospace;
@@ -63,13 +64,13 @@ input {
 }
 .emailentry {
     position: absolute;
-        top: 35%;
+        top: 30%;
         left: 13%;
 }
 
 .passwordtext {
     position: absolute;
-        top: 50%;
+        top: 45%;
         left: 19%;
     transform: translate(-50%, -50%);
     font-family: monospace;
@@ -78,21 +79,146 @@ input {
 }
 .passwordentry {
     position: absolute;
-        top: 55%;
+        top: 50%;
         left: 13%;
 }
 
-.passwordforconfirmationtext {
+.errortext {
     position: absolute;
-        top: 70%;
+        top: 82%;
+        left: 45%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cofirmedpasswordtext {
+    position: absolute;
+        top: 65%;
         left: 28%;
     transform: translate(-50%, -50%);
     font-family: monospace;
     font-weight: bold;
     font-size: 13px;
 }
-.passwordforconfirmationentry {
+.cofirmedpasswordentry {
     position: absolute;
-        top: 75%;
+        top: 70%;
         left: 13%;
+}
+
+.button {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 250px;
+    height: 60px;
+    border: 1px lightgrey solid;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #fefefe, #d5d5d5);
+    box-shadow:  10px 10px 20px #cccccc,
+                -10px -10px 20px #ffffff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 250px;
+    height: 60px;
+    border: 1px lightgrey solid;
+    border-radius: 24px;
+    background: #ededed;
+    box-shadow:  10px 10px 20px #cccccc,
+                -10px -10px 20px #ffffff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.button:active {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 250px;
+    height: 60px;
+    border: 1px lightgrey solid;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #d5d5d5, #fefefe);
+    box-shadow:  10px 10px 20px #cccccc,
+                -10px -10px 20px #ffffff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.usernametextlogin {
+    position: absolute;
+        top: 15%;
+        left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+.usernameentrylogin {
+    position: absolute;
+        top: 20%;
+        left: 13%;
+}
+
+.passwordtextlogin {
+    position: absolute;
+        top: 45%;
+        left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+.passwordentrylogin {
+    position: absolute;
+        top: 50%;
+        left: 13%;
+}
+
+.loginsignupbutton {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 50px;
+    height: 20px;
+    color: 1e90ff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 7px;
+    cursor: pointer;
+}
+.loginsignupbutton:hover {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 50px;
+    height: 20px;
+    color: 1e90ff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 7px;
+    cursor: pointer;
+}
+.loginsignupbutton:active {
+    position: absolute;
+        top: 90%;
+        left: 27%;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background: color(0, 191, 255, 0.2);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 7px;
+    cursor: pointer;
 }

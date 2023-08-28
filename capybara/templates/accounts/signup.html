@@ -2,27 +2,34 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="jquery.devrama.book.js"></script>
     <title>ユーザー登録</title>
     {% load static %}
+    {% load widget_tweaks %}
     <link rel="stylesheet" href="{% static 'css/main_bbs.css' %}">
 </head>
 <body>
-    <div class="maintext">
-        <h1>welcome to Capybara</h1>
-    </div>
+<div class="maintext">
+    <h1>welcome to Capybara</h1>
+</div>
+<div class="container-wrap">
     <div class="container">
-        <p class="usernametext">Username</p>
-        <input class="usernameentry" type="text" placeholder="ユーザー名を入力してください">
+        <p class="usernametextsignup">Username</p>
         <p class="emailtext">Email</p>
-        <input class="emailentry" type="email" placeholder="メールアドレスを入力してください">
         <p class="passwordtext">password</p>
-        <input class="passwordentry" type="text" placeholder="パスワード入力してください">
-        <p class="passwordforconfirmationtext">password for confirmation</p>
-        <input class="passwordforconfirmationentry" type="text" placeholder="確認のためもう一度パスワードを入力してください">
+        <p class="cofirmedpasswordtext">password for confirmation</p>
+        <form method="POST" action="http://127.0.0.1:8000/BBS/login" name="signup_form">{% csrf_token %}
+            {{form.user_name| add_class:"entry usernameentrysignup"| append_attr:"id:username"| append_attr:"placeholder:ユーザー名を入力してください"}}
+            {{form.mail_adress| add_class:"entry emailentry"| append_attr:"id:email"| append_attr:"placeholder:メールアドレスを入力してください"}}
+            {{form.password| add_class:"entry passwordentry"| append_attr:"id:password"| append_attr:"placeholder:パスワード入力してください"}}
+            {{form.password_re| add_class:"entry cofirmedpasswordentry"| append_attr:"id:confirmpassword"| append_attr:"placeholder:確認のためもう一度パスワードを入力してください"}}
+            <input id="signup_btn" class="button" type="button" value="signup!" onclick="CheckPassword()">
+            <p id="passworderrortext" class="errortext" style="display: none;">*パスワードが一致しませんもう一度入力し直してください</p>
+            <p id="userinfomationerrortext" class="errortext" style="display: none;">*登録に必要な情報が入力されていませんもう一度入力し直してください</p>
+        </form>
     </div>
-    <form action="{% url 'main_BBS:signup' %}" method="post">
-    </form>
+</div>
+<form action="{% url 'main_BBS:signup' %}" method="post">
+</form>
+<script src="{% static 'js/signup.js' %}"></script>
 </body>
 </html>

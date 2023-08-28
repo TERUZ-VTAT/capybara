@@ -6,10 +6,10 @@ BASE
 .devrama-book *,
 .devrama-book *::after,
 .devrama-book *::before {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-   
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 
 
@@ -26,9 +26,9 @@ BASE
 	top: 0;
 	left: 0;
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
 .devrama-book .book ul li {
@@ -36,7 +36,7 @@ BASE
 	outline: 1px solid transparent;
 }
 
-.devrama-book > ul {
+.devrama-book>ul {
 	display: none;
 }
 
@@ -47,11 +47,11 @@ THE OUTER BOX OF PHOTOBOOK
 	display: inline-block;
 	position: relative;
 	-webkit-perspective: 2000px;
-       -moz-perspective: 2000px;
-         -o-perspective: 2000px;
-            perspective: 2000px;
-            
-    overflow: visible;
+	-moz-perspective: 2000px;
+	-o-perspective: 2000px;
+	perspective: 2000px;
+
+	overflow: visible;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -62,31 +62,32 @@ THE OUTER BOX OF PHOTOBOOK
 	top: 0px;
 	left: 0px;
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
-	
-    -webkit-perspective: 2000px;
-       -moz-perspective: 2000px;
-         -o-perspective: 2000px;
-            perspective: 2000px;
-            
-    -webkit-transition: all 700ms ease;
-       -moz-transition: all 700ms ease;
-         -o-transition: all 700ms ease;
-            transition: all 700ms ease;
-    
-    -webkit-transform-origin: 0% 0%;
-       -moz-transform-origin: 0% 0%;
-         -o-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-perspective: 2000px;
+	-moz-perspective: 2000px;
+	-o-perspective: 2000px;
+	perspective: 2000px;
+
+	-webkit-transition: all 700ms ease;
+	-moz-transition: all 700ms ease;
+	-o-transition: all 700ms ease;
+	transition: all 700ms ease;
+
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+
 }
-	/*
+
+/*
 	.devrama-book .book ul li::after{
 		-webkit-transition: background-color 300ms ease;
-       	   -moz-transition: background-color 300ms ease;
-             -o-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+            -o-transition: background-color 300ms ease;
                 transition: background-color 300ms ease;
 		position: absolute;
 		content: '';
@@ -97,7 +98,6 @@ THE OUTER BOX OF PHOTOBOOK
 		z-index: 1000;
 		background-color: rgba(0, 0, 0, 0);
 	}
-	
 	.devrama-book .book ul li.shadow::after{
 		background-color: rgba(0, 0, 0, 0.1);
 	}
@@ -108,32 +108,33 @@ THE SPINE
 */
 .devrama-book .book ul.spine {
 	height: 100%;
-	
+
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
-	
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
 }
-	.devrama-book .book ul.spine li {
-		height: 100%;
-		-webkit-transform-origin: 0% 0%;
-	       -moz-transform-origin: 0% 0%;
-	         -o-transform-origin: 0% 0%;
-	            transform-origin: 0% 0%;
-	}
-	
-	.devrama-book .book ul.spine li.front {
-		background-color: rgba(45, 43, 42, 1);
-		-webkit-transform: rotateY(-90deg) translateX(-100%);
-	       -moz-transform: rotateY(-90deg) translateX(-100%);
-	         -o-transform: rotateY(-90deg) translateX(-100%);
-	            transform: rotateY(-90deg) translateX(-100%);
-	}
-	
-	
-	
-	
+
+.devrama-book .book ul.spine li {
+	height: 100%;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+.devrama-book .book ul.spine li.front {
+	background-color: rgba(45, 43, 42, 1);
+	-webkit-transform: rotateY(-90deg) translateX(-100%);
+	-moz-transform: rotateY(-90deg) translateX(-100%);
+	-o-transform: rotateY(-90deg) translateX(-100%);
+	transform: rotateY(-90deg) translateX(-100%);
+}
+
+
+
+
 
 /*
 THE FRONT
@@ -141,95 +142,95 @@ THE FRONT
 .devrama-book .book ul.front {
 	width: 100%;
 	height: 100%;
-	
+
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-transform-origin: 0% 0%;
-       -moz-transform-origin: 0% 0%;
-         -o-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    z-index: 200;
-    
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	z-index: 200;
+
 }
 
-.devrama-book .book ul.front.turn{
-	
-	 -webkit-transform: rotateY(-180deg) translateZ(3px);
-        -moz-transform: rotateY(-180deg) translateZ(3px);
-          -o-transform: rotateY(-180deg) translateZ(3px);
-             transform: rotateY(-180deg) translateZ(3px);
+.devrama-book .book ul.front.turn {
+
+	-webkit-transform: rotateY(-180deg) translateZ(3px);
+	-moz-transform: rotateY(-180deg) translateZ(3px);
+	-o-transform: rotateY(-180deg) translateZ(3px);
+	transform: rotateY(-180deg) translateZ(3px);
 }
 
 
 
 
-	.devrama-book .book ul.front li {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		-webkit-transform-origin: 0% 0%;
-	       -moz-transform-origin: 0% 0%;
-	         -o-transform-origin: 0% 0%;
-	            transform-origin: 0% 0%;
-	   -webkit-backface-visibility: hidden;
-	      -moz-backface-visibility: hidden;
-		       backface-visibility: hidden;
-	}
-	
-	.devrama-book .book ul.front li.front {
-		cursor: pointer;
-		background-color: #FFF;
-		background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-	}
-	
-	.devrama-book .book ul.front li.front::before {
-		position: absolute;
-		content: '';
-		top: 0px;
-		left: 0px;
-		width: 4.5%;
-		height: 100%;
-		background-color: rgb(255, 255, 255);
-		background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
-		background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
-		background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
-		
-	}
-	
-		
-	
-	
-	
-	.devrama-book .book ul.front li.back {
-		background-color: #FFF;
-		background-image: -webkit-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: -moz-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
-	}
-	
+.devrama-book .book ul.front li {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
 
-	
-	
-	.devrama-book .book ul.front li.top,
-	.devrama-book .book ul.front li.bottom {
-		background-color: rgba(45, 43, 42, 1);
-	}
-	
-	.devrama-book .book ul.front li.left,
-	.devrama-book .book ul.front li.right {
-		width: 100%;
-		height: 100%;
-		background-color: rgba(45, 43, 42, 1);
-		
-	}
-	
+.devrama-book .book ul.front li.front {
+	cursor: pointer;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+}
+
+.devrama-book .book ul.front li.front::before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	left: 0px;
+	width: 4.5%;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
+	background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
+	background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(20, 19, 15, 0.93) 100%);
+
+}
+
+
+
+
+
+.devrama-book .book ul.front li.back {
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: -moz-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
+}
+
+
+
+
+.devrama-book .book ul.front li.top,
+.devrama-book .book ul.front li.bottom {
+	background-color: rgba(45, 43, 42, 1);
+}
+
+.devrama-book .book ul.front li.left,
+.devrama-book .book ul.front li.right {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(45, 43, 42, 1);
+
+}
+
 
 
 /*
@@ -238,59 +239,59 @@ THE BACK
 .devrama-book .book ul.back {
 	width: 100%;
 	height: 100%;
-	
+
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-transform-origin: 0% 0%;
-       -moz-transform-origin: 0% 0%;
-         -o-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
 }
 
 
-	.devrama-book .book ul.back li {
-		width: 100%;
-		height: 100%;
-		-webkit-transform-origin: 0% 0%;
-	       -moz-transform-origin: 0% 0%;
-	         -o-transform-origin: 0% 0%;
-	            transform-origin: 0% 0%;
-		-webkit-backface-visibility: hidden;
-	       -moz-backface-visibility: hidden;
-		        backface-visibility: hidden;
-	}
-	
-	.devrama-book .book ul.back li.front {
-		background-color: #FFF;
-		background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-	}
-	
-	.devrama-book .book ul.back li.back {
-		background-color: #FFF;
-		background-image: -webkit-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: -moz-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		background-image: linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
-	}
-	
-	.devrama-book .book ul.back li.top,
-	.devrama-book .book ul.back li.bottom {
-		background-color: rgba(45, 43, 42, 1);
-	}
-	
-	.devrama-book .book ul.back li.left,
-	.devrama-book .book ul.back li.right {
-		width: 100%;
-		height: 100%;
-		background-color: rgba(45, 43, 42, 1);
-		
-	}
-	
+.devrama-book .book ul.back li {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.devrama-book .book ul.back li.front {
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: -moz-linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: linear-gradient(left, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+}
+
+.devrama-book .book ul.back li.back {
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: -moz-linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	background-image: linear-gradient(right, rgb(45, 43, 41) 50%, rgba(45, 43, 41, 0.64) 200%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
+}
+
+.devrama-book .book ul.back li.top,
+.devrama-book .book ul.back li.bottom {
+	background-color: rgba(45, 43, 42, 1);
+}
+
+.devrama-book .book ul.back li.left,
+.devrama-book .book ul.back li.right {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(45, 43, 42, 1);
+
+}
+
 
 /*
 THE PAGE
@@ -298,49 +299,49 @@ THE PAGE
 .devrama-book .book ul.page {
 	width: 100%;
 	height: 100%;
-	
+
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-transform-origin: 0% 0%;
-       -moz-transform-origin: 0% 0%;
-         -o-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-   
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+
 }
 
-	.devrama-book .book ul.page li {
-		width: 100%;
-		height: 100%;
-		-webkit-transform-origin: 0% 0%;
-	       -moz-transform-origin: 0% 0%;
-	         -o-transform-origin: 0% 0%;
-	            transform-origin: 0% 0%;
-	   -webkit-backface-visibility: hidden;
-	      -moz-backface-visibility: hidden;
-		       backface-visibility: hidden;
-	}
-	
-	.devrama-book .book ul.page li.front {
-		background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-		border-radius: 0px 2px 2px 0px;
-	}
-	
-	.devrama-book .book ul.page li.back {
-		-webkit-transform: rotateY(180deg) translateX(-100%);
-	       -moz-transform: rotateY(180deg) translateX(-100%);
-	         -o-transform: rotateY(180deg) translateX(-100%);
-	            transform: rotateY(180deg) translateX(-100%);
-		background: -webkit-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		background: -moz-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		background: linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
-		border-radius: 2px 0px 0px 2px;
-	}
+.devrama-book .book ul.page li {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.devrama-book .book ul.page li.front {
+	background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+	border-radius: 0px 2px 2px 0px;
+}
+
+.devrama-book .book ul.page li.back {
+	-webkit-transform: rotateY(180deg) translateX(-100%);
+	-moz-transform: rotateY(180deg) translateX(-100%);
+	-o-transform: rotateY(180deg) translateX(-100%);
+	transform: rotateY(180deg) translateX(-100%);
+	background: -webkit-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	background: -moz-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	background: linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
+	border-radius: 2px 0px 0px 2px;
+}
 
 
 /*
@@ -349,74 +350,82 @@ THE STACK PAGE
 .devrama-book .book ul.stack {
 	width: 100%;
 	height: 100%;
-	
+
 	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	     -o-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-transform-origin: 0% 0%;
-       -moz-transform-origin: 0% 0%;
-         -o-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-   z-index: 100;
-  
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	z-index: 100;
+
 }
 
-.devrama-book .book ul.stack.ztop { z-index: 103; }
-.devrama-book .book ul.stack.zmiddle { z-index: 102; }
-.devrama-book .book ul.stack.zbottom { z-index: 101; }
-
-.devrama-book .book ul.stack.turn{
-	 -webkit-transform: rotateY(-180deg);
-        -moz-transform: rotateY(-180deg);
-          -o-transform: rotateY(-180deg);
-             transform: rotateY(-180deg);
+.devrama-book .book ul.stack.ztop {
+	z-index: 103;
 }
 
-.devrama-book .book ul.stack.leftpush1px{
-	 -webkit-transform: rotateY(-180deg) translateZ(1px);
-        -moz-transform: rotateY(-180deg) translateZ(1px);
-          -o-transform: rotateY(-180deg) translateZ(1px);
-             transform: rotateY(-180deg) translateZ(1px);
+.devrama-book .book ul.stack.zmiddle {
+	z-index: 102;
 }
 
-.devrama-book .book ul.stack.rightpush1px{
-	 -webkit-transform: translateZ(-1px);
-        -moz-transform: translateZ(-1px);
-          -o-transform: translateZ(-1px);
-             transform: translateZ(-1px);
+.devrama-book .book ul.stack.zbottom {
+	z-index: 101;
+}
+
+.devrama-book .book ul.stack.turn {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.devrama-book .book ul.stack.leftpush1px {
+	-webkit-transform: rotateY(-180deg) translateZ(1px);
+	-moz-transform: rotateY(-180deg) translateZ(1px);
+	-o-transform: rotateY(-180deg) translateZ(1px);
+	transform: rotateY(-180deg) translateZ(1px);
+}
+
+.devrama-book .book ul.stack.rightpush1px {
+	-webkit-transform: translateZ(-1px);
+	-moz-transform: translateZ(-1px);
+	-o-transform: translateZ(-1px);
+	transform: translateZ(-1px);
 }
 
 
 
-	.devrama-book .book ul.stack li {
-		width: 100%;
-		height: 100%;
-		-webkit-transform-origin: 0% 0%;
-	       -moz-transform-origin: 0% 0%;
-	         -o-transform-origin: 0% 0%;
-	            transform-origin: 0% 0%;
-	   -webkit-backface-visibility: hidden;
-	      -moz-backface-visibility: hidden;
-		       backface-visibility: hidden;
-	}
-	
-	.devrama-book .book ul.stack li.front {
-		background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-		border-radius: 0px 2px 2px 0px;
-	}
-	
-	.devrama-book .book ul.stack li.back {
-		-webkit-transform: rotateY(180deg) translateX(-100%);
-	       -moz-transform: rotateY(180deg) translateX(-100%);
-	         -o-transform: rotateY(180deg) translateX(-100%);
-	            transform: rotateY(180deg) translateX(-100%);
-		background: -webkit-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		background: -moz-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		background: linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
-		box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
-		border-radius: 2px 0px 0px 2px;
-	}
+.devrama-book .book ul.stack li {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.devrama-book .book ul.stack li.front {
+	background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+	border-radius: 0px 2px 2px 0px;
+}
+
+.devrama-book .book ul.stack li.back {
+	-webkit-transform: rotateY(180deg) translateX(-100%);
+	-moz-transform: rotateY(180deg) translateX(-100%);
+	-o-transform: rotateY(180deg) translateX(-100%);
+	transform: rotateY(180deg) translateX(-100%);
+	background: -webkit-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	background: -moz-linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	background: linear-gradient(right, #e1ddd8 0%, #fffbf6 100%);
+	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset 1px 0px 1px rgba(150, 150, 150, 0.2);
+	border-radius: 2px 0px 0px 2px;
+}

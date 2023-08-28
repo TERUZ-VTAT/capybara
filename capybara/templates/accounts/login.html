@@ -1,29 +1,30 @@
-
-{% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>ログイン</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main_bbs.css' %}">
 </head>
 <body>
-    <h1>ログイン</h1>
-    <form action="{% url 'main_BBS:login' %}" method="post">
-    {% csrf_token %}
-        {{ form.as_p }}
-        <p><input type="submit" value="ログイン"></p>
-    </form>
+    <div class="maintext">
+        <h1>Login</h1>
+    </div>
+    <div class="container-wrap">
+        <div class="container">
+            <p class="usernametextlogin">Username</p>
+            <p class="passwordtextlogin">password</p>
+            <form method="POST" action="＃">
+                <input class="entry usernameentrylogin" type="text" placeholder="ユーザー名を入力してください" required="required">
+                <input class="entry passwordentrylogin" type="password" placeholder="パスワード入力してください" required="required">
+                <input class="button" type="submit" value="login!">
+            </form>
+            <form method="POST" action="！">
+                <input class"loginsignupbutton" type="submit" value="*パスワードを忘れた方はこちら">
+            </form>
+            <form method="POST" action="http://127.0.0.1:8000/BBS/signup/">
+                <input class"loginsinupbutton" type="submit" value="*新しいアカウントを作成する">
+            </form>
+        </div>
+    </div>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-

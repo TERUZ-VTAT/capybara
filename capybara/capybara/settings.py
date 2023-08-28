@@ -27,13 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_URL = '/login' 
+LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL = '/chat/top'
 LOGOUT_REDIRECT_URL='/login'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -127,3 +128,5 @@ STATICFILES_DIRS = [BASE_DIR / "static" ]
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# AUTH_USER_MODEL = 'main_BBS.login'
