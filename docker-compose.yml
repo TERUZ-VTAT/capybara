@@ -13,3 +13,4 @@ services:
     tty: true
 #    image: app:django
 #    command: python manage.py runserver 0.0.0.0:8000
+
