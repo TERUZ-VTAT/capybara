@@ -28,3 +28,11 @@ This repository is VTA's repository.
 
 ### 以上のことにご理解とご協力をお願いします。
 ### もしミスをしてしまっても特段責め立てたりはしないのでみんなで楽しくやりましょう！
+
+# このブランチで行ったことなど
+## HTMLからログイン情報を呼び出す方法
+ログイン後は　{{ user.[DB項目名] }}で呼び出す
+例：ユーザ名は {{ user.first_name }}で表示される
+使えるのは
+user.account_id , user.email , user.first_name　など。
+なお、使わないと思うがユーザ通し番号は user.id で番号取得ができる
