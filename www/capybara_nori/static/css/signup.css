@@ -2,6 +2,7 @@
     border: 3px #BBB solid;
     border-radius: 30px;
     padding-bottom: 20px;
+    padding-top: 20px;
     background-color: #DDD;
 
 
@@ -72,4 +73,20 @@
 .form_btn{
     width: 80px;
 
+}
+
+.errorlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.errorlist li {
+    text-align: left;
+    color: indianred;
+    font-size: 10px;
+}
+.col_error {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
 }

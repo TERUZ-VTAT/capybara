@@ -23,22 +23,27 @@
       <div class="">
         <div class="col col_title">UserID</div>
         <div class="col col_input">{{ form.account_id }}</div>
+        <div class="col col_error">{{ form.errors.account_id }}</div>
       </div>
       <div class="">
         <div class="col col_title">Email Address</div>
         <div class="col col_input">{{ form.email }}</div>
+        <div class="col col_error">{{ form.errors.email }}</div>
       </div>
       <div class="">
         <div class="col col_title">User Name</div>
         <div class="col col_input">{{ form.first_name }}</div>
+        <div class="col col_error">{{ form.errors.first_name }}</div>
       </div>
       <div class="">
         <div class="col col_title">Password</div>
         <div class="col col_input">{{ form.password1 }}</div>
+        <div class="col col_error">{{ form.errors.password1 }}</div>
       </div>
       <div class="">
         <div class="col col_title">Password(Check)</div>
         <div class="col col_input">{{ form.password2 }}</div>
+        <div class="col col_error">{{ form.errors.password2 }}</div>
       </div>
     </div>
 
