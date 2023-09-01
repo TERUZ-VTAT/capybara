@@ -31,7 +31,7 @@ This repository is VTA's repository.
 
 # このブランチで行ったことなど
 ## HTMLからログイン情報を呼び出す方法
-ログイン後は　{{ user.[DB項目名] }}で呼び出す
+ログイン後は　{{ user.[DB項目名] }}で呼び出す 
 例：ユーザ名は {{ user.first_name }}で表示される
 使えるのは
 user.account_id , user.email , user.first_name　など。
