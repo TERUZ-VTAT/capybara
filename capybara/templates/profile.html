@@ -10,19 +10,22 @@
 
 <body>
     <div class="bodyback">
-        {% comment %} <button class="button">
-            <div></div>
-        </button> {% endcomment %}
         <div class="namebox">
-            <div class="icon"></div>
-            <h1 style="left:20px; position: relative; font-size: 3.6rem;">{{object.user_name_s}}</h1>
-            <div style="position: relative;left: 60px; font: 2.5rem bold; ">{{object.user_id_s}}</div>
+            <div class="icon">
+                {{object.icon_path}}
+            </div>
+            <h1 class="username">{{object.user_name_s}}</h1>
+            <div class="userid">{{object.user_id_s}}</div>
         </div>
-        <h2 style="position:relative; left:50px">Description:</h2>
-        <h2 style="position:relative; left:50px">{{object.user_description_s}}</h2>
-        <h2 style="position:relative; left:50px"><br>Password:</h2>
-        <h2 style="position:relative; left:50px">{{object.user_password_s}}</h2>
-        <h2 style="position:relative; left:50px">{{object.user_birth_s}}</h2>
+        <h2 class="details">Description:<br>{{object.user_description_s}}</h2>
+        <h2 class="details">
+            <br>
+            Password:
+            <br>
+            {{object.user_password_s}}
+            <br>
+            {{object.user_birth_s}}
+        </h2>
     </div>
 </body>
 
