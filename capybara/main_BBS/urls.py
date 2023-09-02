@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("",views.mainBBSview.as_view())
+    path("",views.GroupSelect.as_view())
 ]
