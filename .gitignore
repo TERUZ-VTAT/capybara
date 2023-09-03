@@ -1,5 +1,4 @@
 __pycache__/
-<<<<<<< HEAD
 */.DS_Store
 .DS_Store
 *.pyc
@@ -29,6 +28,3 @@ __pycache__/
 */__pycache__/
 .idea/
 
-=======
-.DS_Store
->>>>>>> develop
