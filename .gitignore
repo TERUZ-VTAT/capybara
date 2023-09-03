@@ -2,6 +2,13 @@ __pycache__/
 */.DS_Store
 .DS_Store
 *.pyc
+*/.pyc
+*/*/.pyc
+*/*/*/.pyc
+*/*/*/*/.pyc
+*/*/*/*/*/.pyc
+*/*/*/*/*/*/.pyc
+*/*/*/*/*/*/*/.pyc
 *.log
 *.pot
 */*/*/*/*/*/*/_pycache_/
