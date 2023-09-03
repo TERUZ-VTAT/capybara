@@ -31,8 +31,35 @@ This repository is VTA's repository.
 
 # このブランチで行ったことなど
 ## HTMLからログイン情報を呼び出す方法
-ログイン後は　{{ user.[DB項目名] }}で呼び出す 
-例：ユーザ名は {{ user.first_name }}で表示される
-使えるのは
-user.account_id , user.email , user.first_name　など。
-なお、使わないと思うがユーザ通し番号は user.id で番号取得ができる
+ログイン後は　{{ user.[DB項目名] }}で呼び出す   
+例：ユーザ名は {{ user.first_name }}で表示される  
+使えるのは  
+user.account_id , user.email , user.first_name　など。  
+なお、使わないと思うがユーザ通し番号は user.id で番号取得ができる  
+## Dockerについて
+    1: Docker Desktopをインストールする
+        https://www.docker.com/products/docker-desktop/
+    2: プロジェクトのドキュメントルートに移動。
+    3: 初回起動時コンソールで以下のコマンドを実行
+        % docker compose up -d --build
+    3': 次回以降は
+        % docker compse up -d
+    4: http://localhost:8000 にアクセス
+
+## Dockerコンテナを停止したいとき
+    5: コンソールから
+        % docker compose stop
+
+## URL
+    新規ユーザ登録：
+    http://localhost:8000/signup/
+    
+    ログイン
+    http://localhost:8000/login/
+
+    管理画面
+    http://localhost:8000/admin/
+    ID: admin
+    PW: admin
+
+
