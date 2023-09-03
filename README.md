@@ -44,7 +44,7 @@ user.account_id , user.email , user.first_name　など。
         % docker compose up -d --build
     3': 次回以降は
         % docker compose up -d
-    4: http://localhost:8000 にアクセス
+    4: http://localhost:8000 にアクセス 
 
 ## Dockerコンテナを停止したいとき
     5: コンソールから
