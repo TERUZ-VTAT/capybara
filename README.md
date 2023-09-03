@@ -1,5 +1,8 @@
 # capybara
 This repository is VTA's repository.
+##  WARNING!!必ず読むこと！！！
+このプロジェクトではDockerを使用するので、
+** #Dockerについて を必ず読み、環境構築をしてください！**
 
 ## まずすること
 1. リポジトリへの参加
