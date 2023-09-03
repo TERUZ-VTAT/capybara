@@ -43,7 +43,7 @@ user.account_id , user.email , user.first_name　など。
     3: 初回起動時コンソールで以下のコマンドを実行
         % docker compose up -d --build
     3': 次回以降は
-        % docker compse up -d
+        % docker compose up -d
     4: http://localhost:8000 にアクセス
 
 ## Dockerコンテナを停止したいとき
