@@ -7,4 +7,7 @@ __pycache__/
 */*/*/_pycache_/
 */*/_pycache_/
 */_pycache_/
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
 .idea/
