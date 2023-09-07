@@ -22,10 +22,10 @@
         <div class="groupsframes">
             {% for roomdata in object_list %}
             <div class="groupsframe">
-                <a class="groupcircle" id={{ roomdata.roomID_Instant }} href="">
-                    <h1 class="grouptitle">{{ roomdata.roomHost_Instant }}</h1>
-                    <div class="roommember">user:{{ roomdata.roomMember_Instant }}</div>
-                    <div>host:{{ roomdata.older_message }}</div>
+                <a class="groupcircle" id={{ roomdata.id }} href="">
+                    <h1 class="grouptitle">{{ roomdata.GroupName }}</h1>
+                    <div class="roommember">user:{{ roomdata.MemberCount }}</div>
+                    <div>host:{{ roomdata.Owner }}</div>
                 </a>
             </div>
             {% endfor %}
