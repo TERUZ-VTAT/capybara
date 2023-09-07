@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
+{% block js %}
+<script src="{% static 'js/login.js' %}"></script>
+{% endblock %}
+{% block title %}
+<div class="h1">Login</div>
+{% endblock %}
+{% block content %}
+<div class="frame">
+<form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+
+    <div class="contains">
+      <div class="">
+        <div class="col col_title">UserID</div>
+        <div class="col col_input">{{ form.username }}</div>
+      </div>
+      <div class="">
+        <div class="col col_title">Password</div>
+        <div class="col col_input">{{ form.password }}</div>
+      </div>
+    </div>
+
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary create_btn form_btn">Login</button>
+        <a href="{% url 'accounts:index' %}" class="btn btn-secondary back_btn form_btn">Back</a>
+    </div>
+</form>
+</div>
+{% endblock %}
