@@ -1,5 +1,5 @@
 """
-URL configuration for capybara_nori project.
+URL configuration for capybara project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -19,6 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("accounts.urls")),
-    path('rooms/', include("chatpage.urls"))
+    path('', include('capybara_chat.urls')) # capybara_chatのurlsを読み込む
 ]
