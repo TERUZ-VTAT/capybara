@@ -89,6 +89,18 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name=_("updateded_at"),
         auto_now=True
     )
+    user_icon_path = models.CharField(
+        verbose_name=_("user_icon_path"),
+        max_length=255,
+        null=True,
+        blank=True
+    )
+    user_description = models.CharField(
+        verbose_name=_("user_description"),
+        max_length=500,
+        null=True,
+        blank=True
+    )
 
     objects = UserManager()
 
