@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'groupselect.apps.GroupselectConfig',
-    'creategroup.apps.CreategroupConfig'
+    'creategroup.apps.CreategroupConfig',
+    'prof.apps.ProfConfig'
 ]
 
 MIDDLEWARE = [
