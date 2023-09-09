@@ -1,0 +1,61 @@
+.bodyback{
+    position: fixed;
+    background: #e8e8e8;
+    box-shadow: inset 6px 6px 12px #9d9d9d,
+                inset -6px -6px 12px #ffffff;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+#pagetitle{
+    margin: 70px;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.infodiv{
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+}
+.infotexts{
+    font-size: 3rem;
+    font-weight: 630;
+    margin-bottom: 0;
+}
+.Entry{
+    width: 100%;
+    height: 4rem;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #c7c7c7,
+            inset -8px -8px 16px #f9f9f9;
+    border-color: #ededed;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+.Textarea{
+    height:30rem;
+    border:2px;
+    padding: 10px;
+    border-style: inset;
+    resize: none;
+    font-size: 2rem;
+}
+.sendbutton{
+    position: fixed;
+    height: 6rem;
+    aspect-ratio: 1/1;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 8px 8px 16px #c7c7c7,
+                -8px -8px 16px #f9f9f9;
+    border-radius: 20px;
+    border-color: #ededed;
+    right: 0;
+    bottom: 0;
+    margin: 3.5rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
