@@ -12,20 +12,13 @@
     <div class="bodyback">
         <div class="namebox">
             <div class="icon">
-                {{object.icon_path}}
+                <img src={% static "images/usericons/"|add:user.user_icon_path %} class="usericon">
             </div>
-            <h1 class="username">{{object.user_name_s}}</h1>
-            <div class="userid">{{object.user_id_s}}</div>
+            <h1 class="username">{{ user.first_name }}</h1>
+            <div class="userid">{{ user.account_id }}</div>
         </div>
-        <h2 class="details">Description:<br>{{object.user_description_s}}</h2>
-        <h2 class="details">
-            <br>
-            Password:
-            <br>
-            {{object.user_password_s}}
-            <br>
-            {{object.user_birth_s}}
-        </h2>
+        <h2 class="details">Description:<br>　{{ user.user_description }}</h2>
+        <h2 class="details"><br>Password:<br>　・・・・...</h2>
     </div>
 </body>
 

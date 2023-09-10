@@ -44,3 +44,7 @@
     left: 60px;
     font: 2.5rem bold;
 }
+
+.usericon{
+    width: -webkit-fill-available;
+}
