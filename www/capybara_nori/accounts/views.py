@@ -33,7 +33,7 @@ class LoginView(BaseLoginView):
 
     def post(self, request, *args, **kwargs):
         if 'loginbtn' in request.POST:
-            self.success_url = "http://"+request.get_host()+"/profiles"
+            self.success_url = "//"+request.get_host()+"/profiles"
         return super().post(request, args, kwargs)
 # LogoutViewを追加
 class LogoutView(BaseLogoutView):
