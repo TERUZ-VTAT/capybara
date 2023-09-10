@@ -89,6 +89,19 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name=_("updateded_at"),
         auto_now=True
     )
+    user_icon_path = models.CharField(
+        verbose_name=_("user_icon_path"),
+        max_length=255,
+        null=True,
+        blank=True,
+        default="defaulticon.png"
+    )
+    user_description = models.CharField(
+        verbose_name=_("user_description"),
+        max_length=500,
+        null=True,
+        blank=True
+    )
 
     objects = UserManager()
 
@@ -97,4 +110,3 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.account_id
-

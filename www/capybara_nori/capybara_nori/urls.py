@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("accounts.urls")),
     path('groupselect/', include("groupselect.urls")),
-    path('groupcreate/', include("creategroup.urls"))
+    path('groupcreate/', include("creategroup.urls")),
+    path('profiles/', include("prof.urls"))
 ]

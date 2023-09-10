@@ -30,6 +30,11 @@ class SignupView(CreateView):
 class LoginView(BaseLoginView):
     form_class = LoginForm
     template_name = "accounts/login.html"
+
+    def post(self, request, *args, **kwargs):
+        if 'loginbtn' in request.POST:
+            self.success_url = "//"+request.get_host()+"/profiles"
+        return super().post(request, args, kwargs)
 # LogoutViewを追加
 class LogoutView(BaseLogoutView):
     success_url = reverse_lazy("accounts:index")

@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'groupselect.apps.GroupselectConfig',
-    'creategroup.apps.CreategroupConfig'
+    'creategroup.apps.CreategroupConfig',
+    'prof.apps.ProfConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,5 +130,5 @@ STATICFILES_DIRS = [BASE_DIR / "static" ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "accounts.User"
-LOGIN_REDIRECT_URL = "accounts:index"
+LOGIN_REDIRECT_URL = "prof:index"
 LOGOUT_REDIRECT_URL = "accounts:login"
