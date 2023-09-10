@@ -10,6 +10,8 @@
 .menumargin{
     height: 7%;
     aspect-ratio: 1/1;
+    position: fixed;
+    z-index: 10;
 }
 .menubutton{
     position: sticky;
@@ -22,7 +24,6 @@
     aspect-ratio: 1/1;
     border-color: lightgray;
     border:0;
-    z-index: 10;
     cursor: pointer;
 }
 .menubutton:active{
