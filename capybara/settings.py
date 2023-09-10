@@ -20,7 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # 'daphne', #pipでインストールしたchannels を追加、しかし、ASGIでレスポンスされなかったのでDaphneを使いました
+    'daphne', #pipでインストールしたchannels を追加、しかし、ASGIでレスポンスされなかったのでDaphneを使いました
 
     'django.contrib.admin',
     'django.contrib.auth',

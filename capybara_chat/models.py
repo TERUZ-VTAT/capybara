@@ -4,4 +4,5 @@ from django.db import models
 class Chat(models.Model):
     message = models.TextField(max_length=300)
     created_at = models.DateTimeField(auto_now=True)
-    # user = models.ManyToManyField(userのDB名)
+    # group = models.TextField(max_length=100)
+    # author = models.ManyToManyField(userのDB名)

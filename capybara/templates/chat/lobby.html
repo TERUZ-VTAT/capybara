@@ -14,7 +14,8 @@
         <button type="submit" class="button"><div class="triangle"></div></button> <!-- ボタンを押すと、メッセージが表示される-->
     </form>
     <div id="messages"></div>
-    {% if all_messages %}
+
+    <!-- {% if all_messages %}
     {% for chat in all_messages %}
         <div class="neumorphism"><div class="icon"></div>
             <p id="Box" class="text">{{ chat.message }}</p>
@@ -23,4 +24,36 @@
     {% endfor %}
     {% else %}
         <div>There is no message yet. Let's in the capybara world!</div>
-    {% endif %}
+    {% endif %} -->
+
+    <script> type="text/javascript"
+        let url = `ws://${window.location.host}/ws/socket-server/`
+
+        const chatSocket = new WebSocket(url)
+
+        chatSocket.onmessage = function(e) {
+            let data = JSON.parse(e.data)
+            console.log('Data:', data)
+
+            if(data.type === 'chat') {
+                let messages = document.getElementById('messages')
+                messages.insertAdjacentHTML('beforeend',
+                    `<div class="neumorphism"><div class="icon"></div>
+                    <p id="Box" class="text">${data.message}</p>
+                    <div class="name"><p>atom</p></div>
+                    </div>`
+                )
+            }
+        }
+
+        let form = document.getElementById('form')
+        let btn = document.getElementById('btn')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            let message = e.target.message.value
+            chatSocket.send(JSON.stringify({
+                'message':message
+            }))
+            form.reset() // メッセージを送ったら、htmlのformの内容をリセットする
+        })
+    </script>
