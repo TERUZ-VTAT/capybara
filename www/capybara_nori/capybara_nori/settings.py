@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,7 +44,14 @@ INSTALLED_APPS = [
     'groupselect.apps.GroupselectConfig',
     'creategroup.apps.CreategroupConfig',
     'prof.apps.ProfConfig',
+    'chatpage.apps.ChatpageConfig',
 ]
+
+CHANNEL_LAYERS = {
+    'default':{
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -72,6 +80,8 @@ TEMPLATES = [
         },
     },
 ]
+
+ASGI_APPLICATION = 'capybara_nori.asgi.application'
 
 WSGI_APPLICATION = 'capybara_nori.wsgi.application'
 
@@ -123,7 +133,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [BASE_DIR / "static" ]
+STATICFILES_DIRS = [ BASE_DIR / "static" ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -132,3 +142,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "accounts.User"
 LOGIN_REDIRECT_URL = "prof:index"
 LOGOUT_REDIRECT_URL = "accounts:login"
+LOGIN_URL = "accounts:login"

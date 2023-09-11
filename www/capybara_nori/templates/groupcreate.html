@@ -21,10 +21,10 @@
                 <p class="infotexts">RoomName:</p>
                 {{ form.GroupName|add_class:"Entry" }}
                 <p class="infotexts">Owner:</p>
-                {% render_field form.Owner value=user.first_name class="Entry" %}
+                {% render_field form.Owner class="Entry" value=user.first_name%}
                 <p class="infotexts">Description:</p>
                 {{ form.Description|add_class:"Entry Textarea" }}
-                <button class="sendbutton" name="sendbutton">
+                <button class="sendbutton" type="submit">
                     ✔️
                 </button>
             </form>

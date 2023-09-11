@@ -22,14 +22,15 @@
         <div class="groupsframes">
             {% for roomdata in object_list %}
             <div class="groupsframe">
-                <a class="groupcircle" id={{ roomdata.roomID_Instant }} href="">
-                    <h1 class="grouptitle">{{ roomdata.roomHost_Instant }}</h1>
-                    <div class="roommember">user:{{ roomdata.roomMember_Instant }}</div>
-                    <div>host:{{ roomdata.older_message }}</div>
+                <a class="groupcircle" id={{ roomdata.id }} href="">
+                    <h1 class="grouptitle">{{ roomdata.GroupName }}</h1>
+                    <div class="roommember">user:{{ roomdata.MemberCount }}</div>
+                    <div>host:{{ roomdata.Owner }}</div>
                 </a>
             </div>
             {% endfor %}
         </div>
+        <a href={% url "creategroup:creategroup" %} class="createroombtn"><h2 class="newroombtntext">CreateNewRoom<h2></a>
     </div>
 
 
@@ -41,9 +42,9 @@
                 <button class="sidebarclosebutton" onclick="sideMenuClose()"></button>
             </div>
         </div>
-        <a href="#" class="sidebaraccountpagebutton">Your Account</a>
+        <a href={% url "prof:index" %} class="sidebaraccountpagebutton">Your Account</a>
         <a href="#" class="sidebarhomepagebutton">Home</a>
-        <a href="#" class="sidebarchatpagebutton">Chat Room</a>
+        <a href="" class="sidebarchatpagebutton">Chat Room</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

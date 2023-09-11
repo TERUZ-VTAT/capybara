@@ -1,0 +1,141 @@
+.bodyback{
+    position: fixed;
+    background: #e8e8e8;
+    box-shadow: inset 6px 6px 12px #9d9d9d,
+                inset -6px -6px 12px #ffffff;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.menumargin{
+    height: 7%;
+    aspect-ratio: 1/1;
+    position: fixed;
+    z-index: 10;
+}
+.menubutton{
+    position: sticky;
+    border-radius: 20%;
+    margin: 40%;
+    height: 90%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  4px 4px 6px #a4a4a4,
+                -4px -4px 6px #ffffff;
+    aspect-ratio: 1/1;
+    border-color: lightgray;
+    border:0;
+    cursor: pointer;
+}
+.menubutton:active{
+    position: sticky;
+    border-radius: 20%;
+    margin: 40%;
+    height: 90%;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  4px 4px 6px #a4a4a4,
+                -4px -4px 6px #ffffff;
+    aspect-ratio: 1/1;
+    border-color: lightgray;
+    border:0;
+    z-index: 10;
+}
+.menutriangle{
+    display: inline-block;
+    margin: 20%;
+    margin-left: 22%;
+    width: 60%;
+    height: 60%;
+    clip-path: polygon(0% 0%, 0% 100%, 95% 50%);
+    background: #b0b0b0;
+    box-shadow: inset 4px 4px 8px #737373,
+                inset -4px -4px 8px #9b9b9b;
+}
+.sidemenu{
+    width: 340px;
+    height: 100%;
+    background: linear-gradient(145deg, #d5d5d5, #b3b3b3);
+    position: absolute;
+    border-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow-y: hidden;
+    left: -340px;
+}
+.sidemenuheader{
+    width: 100%;
+    aspect-ratio: 20/5;
+    background: linear-gradient(145deg, #aeaeae, #939393);
+    border-radius: 10px;
+    box-shadow:  2px 2px 4px #787878,
+            -2px -2px 4px #bbbbbb;
+}
+.sidemenutitle{
+    padding: 2%;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 53px;
+}
+.sidebarclosebutton{
+    height: 60%;
+    aspect-ratio: 1/1;
+    clip-path: polygon(5% 50%, 100% 100%, 100% 0%);
+    background: #b0b0b0;
+    box-shadow: inset 4px 4px 8px #737373,
+                inset -4px -4px 8px #9b9b9b;
+    border: 0px;
+}
+.sidebaraccountpagebutton{
+    position: absolute;
+        top: 15%;
+        left: 2%;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    border: 1px lightgrey solid;
+    border-radius: 100px;
+    background: #ededed;
+    color: #000000;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30pt;
+    text-decoration: none;
+}
+.sidebarhomepagebutton{
+    position: absolute;
+        top: 35%;
+        left: 2%;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    border: 1px lightgrey solid;
+    border-radius: 100px;
+    background: #ededed;
+    color: #000000;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30pt;
+    text-decoration: none;
+}
+.sidebarchatpagebutton{
+    position: absolute;
+        top: 43%;
+        left: 2%;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    border: 1px lightgrey solid;
+    border-radius: 100px;
+    background: #ededed;
+    color: #000000;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30pt;
+    text-decoration: none;
+}
+.selected{
+    background: #000000;
+    color: #ededed;
+}

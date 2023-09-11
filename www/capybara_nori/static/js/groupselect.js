@@ -24,7 +24,7 @@ for (let i = 0; i < groupCircles.length; i++) {
 
   groupCircle.setAttribute(
     "href",
-    location.href + "rooms/" + groupCircle.id + "/"
+    "http://" + location.host + "/rooms/" + groupCircle.id + "/"
   );
 
   // console.log({{ roomdata.roomMember_Instant }} / 100);

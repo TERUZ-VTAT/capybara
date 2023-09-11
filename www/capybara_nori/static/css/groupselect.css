@@ -10,6 +10,8 @@
 .menumargin{
     height: 7%;
     aspect-ratio: 1/1;
+    position: fixed;
+    z-index: 10;
 }
 .menubutton{
     position: sticky;
@@ -22,7 +24,6 @@
     aspect-ratio: 1/1;
     border-color: lightgray;
     border:0;
-    z-index: 10;
     cursor: pointer;
 }
 .menubutton:active{
@@ -192,3 +193,59 @@
     box-shadow: inset 20px 20px 60px #bebebe,
                 inset -20px -20px 60px #ffffff;
 }
+
+.createroombtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    right: 0px;
+    bottom: 0px;
+    margin: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  21px 21px 42px #a8a8a8,
+                -21px -21px 42px #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.createroombtn:hover {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    right: 0px;
+    bottom: 0px;
+    margin: 25px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  21px 21px 42px #a8a8a8,
+                -21px -21px 42px #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.createroombtn:active {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    right: 0px;
+    bottom: 0px;
+    margin: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  21px 21px 42px #a8a8a8,
+                -21px -21px 42px #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.newroombtntext {
+    margin: 15px;
+}
+
