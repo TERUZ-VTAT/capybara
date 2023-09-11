@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,7 +44,14 @@ INSTALLED_APPS = [
     'groupselect.apps.GroupselectConfig',
     'creategroup.apps.CreategroupConfig',
     'prof.apps.ProfConfig',
+    'chatpage.apps.ChatpageConfig',
 ]
+
+CHANNEL_LAYERS = {
+    'default':{
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -72,6 +80,8 @@ TEMPLATES = [
         },
     },
 ]
+
+ASGI_APPLICATION = 'capybara_nori.asgi.application'
 
 WSGI_APPLICATION = 'capybara_nori.wsgi.application'
 
