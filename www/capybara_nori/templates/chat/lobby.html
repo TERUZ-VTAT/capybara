@@ -1,30 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href={% static 'css/sidebar.css' %}>
     <title>Capybara</title>
 </head>
-<body>
-    <!-- <h1>Let's talk about capybara!</h1> -->
-    <form id="form" method="POST" style="position: fixed; bottom: 50px; left: 170px;"> {% csrf_token %}
-        <input maxlength="30" class="input" placeholder="type your message" type="text" name="message" size="100" required>
-        <button type="submit" class="button"><div class="triangle"></div></button> <!-- ボタンを押すと、メッセージが表示される-->
-        RoomID:
-        <input maxlength="30" type="number" name="sent_room_id" value={{ room_id }} readonly>
-    </form>
-    <div id="messages">
-    {% for chat in all_messages %}
-        <div class="neumorphism"><div class="icon"></div>
-            <p id="Box" class="text">{{ chat.message }}</p>
-            <div class="name"><p>{{ user.first_name }}</p></div> <!--DBからUserの名前を取り出すこともできる-->
-        </div>
-    {% endfor %}
-    </div>
 
-    <!-- {% if all_messages %}
+<body>
+    <div class="bodyback">
+        <div class="menumargin">
+            <button class="menubutton" onclick="sideMenuOpen()">
+                <div class="menutriangle">
+                </div>
+            </button>
+        </div>
+        <!-- <h1>Let's talk about capybara!</h1> -->
+        <form id="form" method="POST" style="position: fixed; bottom: 50px; left: 170px;"> {% csrf_token %}
+            <input maxlength="30" class="input" placeholder="type your message" type="text" name="message" size="100"
+                required>
+            <button type="submit" class="button">
+                <div class="triangle"></div>
+            </button> <!-- ボタンを押すと、メッセージが表示される-->
+            RoomID:
+            <input maxlength="30" type="number" name="sent_room_id" value={{ room_id }} readonly>
+        </form>
+        <div id="messages">
+            {% for chat in all_messages %}
+            <div class="neumorphism">
+                <div class="icon"></div>
+                <p id="Box" class="text">{{ chat.message }}</p>
+                <div class="name">
+                    <p>{{ user.first_name }}</p>
+                </div> <!--DBからUserの名前を取り出すこともできる-->
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- {% if all_messages %}
     {% for chat in all_messages %}
         <div class="neumorphism"><div class="icon"></div>
             <p id="Box" class="text">{{ chat.message }}</p>
@@ -34,17 +52,32 @@
     {% else %}
         <div>There is no message yet. Let's in the capybara world!</div>
     {% endif %} -->
+    </div>
+    <div class="sidemenu" id="sidemenu">
+        <div class="sidemenuheader">
+            <div class="sidemenutitle">
+                <strong>CAPYBARA</strong>
+                <button class="sidebarclosebutton" onclick="sideMenuClose()"></button>
+            </div>
+        </div>
+        <a href={% url "prof:index" %} class="sidebaraccountpagebutton selected">Your Account</a>
+        <a href="#" class="sidebarhomepagebutton">Home</a>
+        <a href={% url "groupselect:groupselect" %} class="sidebarchatpagebutton">Chat Room</a>
+    </div>
 
-    <script> type="text/javascript"
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src={% static "js/sidebar.js" %} type="text/javascript"></script>
+    <script> type = "text/javascript"
         let url = `ws://${window.location.host}/ws/socket-server/`
 
         const chatSocket = new WebSocket(url)
 
-        chatSocket.onmessage = function(e) {
+        chatSocket.onmessage = function (e) {
             let data = JSON.parse(e.data)
             console.log('Data:', data)
 
-            if(data.type === 'chat') {
+            if (data.type === 'chat') {
                 let messages = document.getElementById('messages')
                 messages.insertAdjacentHTML('beforeend',
                     `<div class="neumorphism"><div class="icon"></div>
@@ -58,12 +91,18 @@
         let form = document.getElementById('form')
         let btn = document.getElementById('btn')
         form.addEventListener('submit', (e) => {
-            e.preventDefault()
-            let message = e.target.message.value
-            chatSocket.send(JSON.stringify({
-                'message':message
-                'sent_room_id':sent_room_id
-            }))
-            form.reset() // メッセージを送ったら、htmlのformの内容をリセットする
+            console.log(event.submitter)
+            if (event.submitter == btn) {
+                e.preventDefault()
+                let message = e.target.message.value
+                chatSocket.send(JSON.stringify({
+                    'message': message,
+                    'sent_room_id': sent_room_id
+                }))
+                form.reset() // メッセージを送ったら、htmlのformの内容をリセットする
+            }
         })
     </script>
+</body>
+
+</html>

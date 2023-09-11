@@ -1,7 +1,17 @@
+.bodyback{
+    position: fixed;
+    background: #e8e8e8;
+    box-shadow: inset 6px 6px 12px #9d9d9d,
+                inset -6px -6px 12px #ffffff;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
 .menumargin{
     height: 7%;
     aspect-ratio: 1/1;
-    position: sticky;
+    position: fixed;
     z-index: 10;
 }
 .menubutton{

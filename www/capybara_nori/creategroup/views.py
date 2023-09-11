@@ -9,7 +9,7 @@ class GroupCreate(LoginRequiredMixin,FormView):
     template_name = "groupcreate.html"
     login_url = "/login"
     form_class = forms.groupcreateform
-    success_url = reverse_lazy("groupselect")
+    success_url = reverse_lazy("groupselect:groupselect")
 
     def form_valid(self, form):
         data = form.cleaned_data
