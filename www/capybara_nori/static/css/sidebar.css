@@ -118,10 +118,14 @@
     text-align: center;
     border: 1px lightgrey solid;
     border-radius: 100px;
-    background: #000000;
-    color: #ededed;
+    background: #ededed;
+    color: #000000;
     font-family: monospace;
     font-weight: bold;
     font-size: 30pt;
     text-decoration: none;
+}
+.selected{
+    background: #000000;
+    color: #ededed;
 }
