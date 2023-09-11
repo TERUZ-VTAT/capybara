@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
+{% block js %}
+<script src="{% static 'js/signup.js' %}"></script>
+
+{% endblock %}
+
+{% block title %}
+<div class="h1">Welcome to capybara</div>
+{% endblock %}
+
+{% block content %}
+<div class="frame">
+  <br>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="contains">
+      <div class="">
+        <div class="col col_title">UserID</div>
+        <div class="col col_input">{{ form.account_id }}</div>
+        <div class="col col_error">{{ form.errors.account_id }}</div>
+      </div>
+      <div class="">
+        <div class="col col_title">Email Address</div>
+        <div class="col col_input">{{ form.email }}</div>
+        <div class="col col_error">{{ form.errors.email }}</div>
+      </div>
+      <div class="">
+        <div class="col col_title">User Name</div>
+        <div class="col col_input">{{ form.first_name }}</div>
+        <div class="col col_error">{{ form.errors.first_name }}</div>
+      </div>
+      <div class="">
+        <div class="col col_title">Password</div>
+        <div class="col col_input">{{ form.password1 }}</div>
+        <div class="col col_error">{{ form.errors.password1 }}</div>
+      </div>
+      <div class="">
+        <div class="col col_title">Password(Check)</div>
+        <div class="col col_input">{{ form.password2 }}</div>
+        <div class="col col_error">{{ form.errors.password2 }}</div>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary create_btn form_btn">Create</button>
+      <a href="{% url 'accounts:index' %}" class="btn btn-secondary back_btn form_btn">Back</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

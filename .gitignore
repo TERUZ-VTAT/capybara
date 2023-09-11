@@ -1,0 +1,7 @@
+__pycache__/
+migrations/
+.DS_Store
+.pyc
+.log
+.pot
+.idea/
